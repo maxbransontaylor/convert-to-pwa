@@ -30,9 +30,7 @@ registerRoute(({ request }) => request.mode === "navigate", pageCache);
 const matchCallback = ({ request }) => {
   console.log("request obj" + request);
   return (
-    request.destination === "style" ||
-    request.destination === "script" ||
-    request.destination === "manifest"
+    request.destination === "style" || request.destination === "script" || false
   );
 };
 
