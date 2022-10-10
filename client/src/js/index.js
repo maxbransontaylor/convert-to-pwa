@@ -1,9 +1,10 @@
 import { Workbox } from "workbox-window";
 import Editor from "./editor";
 import "./database";
+import "./install";
 import "../css/style.css";
 import Logo from "../images/logo.png";
-
+import Favicon from "../../favicon.ico";
 window.addEventListener("load", function () {
   document.querySelector(".navbar-brand").src = Logo;
 });
